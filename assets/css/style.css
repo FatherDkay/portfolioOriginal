@@ -1,0 +1,230 @@
+:root {
+    --light: #ffffff;
+    --purple: #6a08a3;
+    --dark: #3c5c5f;
+    --shadow: rbga(0,0,0,0.8);
+}
+  
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    color: var(--light);
+    background-color: var(--dark);
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+header {
+    padding: 20px 35px;
+    background-color: var(--dark);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    background-image: url("../images/techBackground - Copy.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 80%;
+    z-index: 9999;
+    border-bottom: 2px solid black;
+}
+  
+header h1 {
+    font-weight: bold;
+    margin: 0;
+    font-size: 36px;
+    color: var(--primary-color);
+    text-shadow: 0 0 10px var(--shadow);
+    justify-content: left;
+}
+  
+header a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+  
+header nav {
+    margin: 7px 0;
+}
+  
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+  
+header nav ul li a {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 1.55vw;
+    text-shadow: 0 0 10px var(--shadow);
+}
+  
+header nav ul li a:hover {
+    background: var(--purple);
+    color: var(--light);
+    border-radius: 15px;
+    text-shadow: none;
+}
+.hero {
+    background-color: var(--dark);
+    background-size: cover;
+    display: flex;
+    background-attachment: fixed;
+    background-position: 80%;
+}
+
+.hero-h2 {
+    width: 100%;
+    justify-content: end;
+    margin: .5%;
+}
+.hero-left {
+    width: 15%;
+    text-align: right;
+    margin: 1%;
+    color: var(--light);
+    font-size: 18px;
+    background-color: var(--dark);
+}
+.hero-right {
+    width: 86%;
+    text-align: left;
+    margin: .5%;
+    color: var(--light);
+    font-size: 18px;
+    justify-content: start;
+}
+.hero-access {
+    width: 43%;
+    background-image: url("../images/access2.jpg");
+    text-align: left;
+    margin: 0%;
+    color: var(--light);
+    font-size: 18px;
+}
+
+.contact {
+display: flex;
+flex-flow: row wrap;
+justify-content: space-evenly;
+padding: 0px;
+margin: 0px 50px 0px 0px;
+list-style: none;   
+}
+
+.contact-item {
+    padding: 5px;
+    width: 35%;
+    height: 150px;
+    margin-top: 5px;
+    margin-right: 50px;
+    color var(--light);
+    font-size: 1.2em;
+    text-align: center;
+}
+.hero-rb {
+    width: 35%;
+    height: 100px;
+    text-align: center;
+    margin: .5%;
+    color: var(--light);
+    font-size: 18px;
+    justify-content: center;
+    align-content: center;
+    background-image: url("../images/rb2.jpg");
+    opacity: .7;
+}
+.hero-rb:hover {
+    opacity: 1;
+}
+
+.hero-tf {
+    display: flex;
+    width: 35%;
+    height: 100px;
+    text-align: center;
+    margin: .5%;
+    color: var(--light);
+    font-size: 18px;
+    justify-content: center;
+    align-content: center;
+    background-image: url("../images/music-run-vector-1263826.jpg");
+    opacity: .7;
+}
+
+.hero-tf:hover{
+opacity: 1;
+}
+
+footer {
+    background-image: url("../images/techBackground - Copy.jpg");
+    padding: 40px 35px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    color: var(--light);
+}
+      
+footer h2 {
+    color: var(--light);
+    font-size: 30px;
+    margin: 0;
+}
+      
+footer div {
+    line-height: 1.5;
+    text-align: right;
+}
+      
+footer a {
+    color: var(--light);
+}
+/*Media Queries */
+@media screen and (max-width: 980px) {
+    header {
+        padding-bottom: 0;
+        justify-content: center;
+        position: relative;
+    }
+    header h1 {
+        text-align: center;
+        width: 100%;
+    }
+    .hero-left {
+        font-size: 14px;
+    }
+    .hero-right {
+        font-size: 14px;
+        flex-wrap: wrap;
+    }
+
+@media screen and (max-width: 768px) {
+    header {
+        padding-bottom: 0;
+        justify-content: center;
+        position: relative;
+    }
+    header h1 {
+        text-align: center;
+        width: 100%;
+    }
+    .hero-left {
+        font-size: 12px;
+    }
+
+@media screen and (max-width: 575px) {
+    header {
+        padding-bottom: 0;
+        justify-content: center;
+        position: relative;
+    }
+
+  
